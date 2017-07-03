@@ -1,0 +1,53 @@
+  /*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+
+/*** Default Mobile Styles ****************************/
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  flex-basis: 24%;
+  padding: 20px 0;
+  background: orange;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+}
+
+@media screen and ( max-width:900px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a {
+      flex-basis: 48%;
+      margin: 5px;
+    }
+  }
+
+  @media screen and ( max-width:600px) {
+    a {
+      flex-basis: 100%;
+      margin: 5px;
+
+    }
+  }
+  /**** Tablet Styles ***********************************/
+  /**** Desktop Styles ***********************************/
